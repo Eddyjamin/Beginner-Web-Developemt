@@ -161,7 +161,7 @@ todos.forEach(function(todo, i, myTodos) {
   console.log(`${i + 1}: ${todo.text}`);
   console.log(myTodos);
 });
-
+// THE PURE ARRAY FUNCTIONS
 // map() - Loop through and create new array
 const todoTextArray = todos.map(function(todo) {
   return todo.text;
@@ -174,6 +174,25 @@ const todo1 = todos.filter(function(todo) {
   // Return only todos where id is 1
   return todo.id === 1; 
 });
+
+// reduce() - Returns a new array with the operation of the 'Accumulator'
+//ACCUMULATOR: a placeholder/variable where we can store information that happens...
+// ...in the body of the reduce() function
+// REDUCE() EXAMPLE 1
+const theArray = [1,2,10,16];
+const reducedArray = theArray.reduce((accumulator, num) =>{
+    return accumulator + num;
+},0);
+console.log(reducedArray);// 29
+// REDUCE() EXAMPLE 2
+const theArray = [1,2,10,16];
+const reducedArray = theArray.reduce((accumulator, num) =>{
+    return accumulator + num;
+},10);
+console.log(reducedArray);// 39
+// The second parameter of the reduce() can also be a map() etc
+
+
 
 
 // CONDITIONALS
