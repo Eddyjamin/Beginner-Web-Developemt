@@ -154,7 +154,7 @@ for(let todo of todos) {
 }
 
 
-// HIGH ORDER ARRAY METHODS (show prototype)
+// HIGH ORDER ARRAY METHODS 
 
 // forEach() - Loops through array
 todos.forEach(function(todo, i, myTodos) {
@@ -242,7 +242,7 @@ const greet = (greeting = 'Hello', name = 'There') => `${greeting} ${name}`;
 console.log(greet('Hi'));
 
 
-// OOP
+// OOP - 0bject Oriented Programming 
 
 // Constructor Function
 function Person(firstName, lastName, dob) {
@@ -340,8 +340,10 @@ const btn = document.querySelector('.btn');
 
 // Mouse Event
 btn.addEventListener('click', e => {
-  e.preventDefault();
-  console.log(e.target.className);
+  e.preventDefault();// forms no longer submits
+  console.log(e.target); // the HTML element, <input>
+  console.log(e.target.id);// gives the id of the tag
+  console.log(e.target.className); // the class name, btn
   document.getElementById('my-form').style.background = '#ccc';
   document.querySelector('body').classList.add('bg-dark');
   ul.lastElementChild.innerHTML = '<h1>Changed</h1>';

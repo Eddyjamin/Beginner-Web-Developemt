@@ -34,7 +34,7 @@
   
   #my-form {
     padding: 2rem;
-    background: #f4f4f4;
+    background: teal;
   }
   
   #my-form label {
@@ -61,7 +61,7 @@
   }
   
   .btn:hover {
-    background: #444;
+    background:crimson;
   }
   
   .bg-dark {
